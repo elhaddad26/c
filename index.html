@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator by Elhaddad Oussama</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .calculatrice>img{
+            width: 400px;
+            height: auto;
+        }
+        .calculatrice>h1{
+            font-size: 40px;
+            top: 170px;
+            position: absolute;
+            font-family:'calculatrice';
+            color: rgb(32, 32, 32);
+        }
+        @font-face {
+            font-family: 'calculatrice';
+            src: url(DS-DIGI.TTF);
+        }
+        .Buttons{
+            border-radius: 10px;
+            border: 3px solid rgb(45, 45, 45);
+            background-color: transparent;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: 355px;
+        }
+        .Buttons:hover{background-color: rgb(60, 60, 60);}
+        .button1{
+            left: 30px;
+        }
+        .button2{
+            left: 110px;
+        }
+        .button3{
+            left: 190px;
+        }
+
+        .button4{
+            left: 270px;
+        }
+        .calculatrice{
+            width: 400px;
+            height: auto;
+            position: relative;
+            border: 1px solid ;
+        }
+        .affichage{
+            font-family: 'calculatrice';
+            font-size: 100px;
+            left: 46px;
+            top: 91px;
+            position:absolute;
+            height: 120px;
+            width:310px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            user-select: none;
+        }
+        .affichage::placeholder{
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+
+<body name="bod">
+    
+    
+    <div name="cal" class="calculatrice">
+        <input dir="rtl" placeholder="CALCULATRICE" name="aff" class="affichage" type="number">
+        <input class="button0 Buttons" name="num0" value="4" type="button" onclick="num0">
+        <input class="button1 Buttons" name="num1" value="1" type="button" onclick="num1">
+        <input class="button2 Buttons" name="num2" value="2" type="button" onclick="num2">
+        <input class="button3 Buttons" name="num3" value="3" type="button" onclick="num3">
+        <input class="button4 Buttons" name="num4" value="4" type="button" onclick="num4">
+        <input class="button5 Buttons" name="num5" value="4" type="button" onclick="num5">
+        <input class="button6 Buttons" name="num6" value="4" type="button" onclick="num6">
+        <input class="button7 Buttons" name="num7" value="4" type="button" onclick="num7">
+        <input class="button8 Buttons" name="num8" value="4" type="button" onclick="num8">
+        <input class="button9 Buttons" name="num9" value="4" type="button" onclick="num9">
+        <img src="test.png">
+        
+        
+        
+
+    </div>
+    <script language="javascript" src="script.js"></script>
+</body>
+</html>
